@@ -1,0 +1,109 @@
+/* miniprogram/pages/biji/biji.wxss */
+page{
+  background: #fcf7f7;
+}
+
+.container{
+  display: flexbox;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.addContainer{
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+}
+
+.addicon{
+  display: flex;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 8vh;
+  margin: 1vh auto;
+}
+
+.addicon image{
+  display: flex;
+  height: 8vh;
+  width: 8vh;
+}
+
+.bijiContainer{
+  display: flexbox;
+  padding-top: 1vh;
+  height: 89vh;
+  width: 100vw;
+}
+
+.itemContainer{
+  display: flexbox;
+  height: 30vh;
+  width: 96vw;
+  border-radius: 40rpx;
+  box-shadow:4px 4px 4px gainsboro;
+  background-color: rgb(255, 250, 250);
+  margin: 2vh 2vw;
+}
+
+.timeContainer{
+  display: flex;
+  height: 4vh;
+  width: 96vw;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.contentContainer{
+  display: flex;
+  width: 92vw;
+  height: 26vh;
+  margin: auto 2vw;
+}
+
+.addBijiContainer{
+  display: flexbox;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50vh;
+  width: 96vw;
+  margin: 20vh 2vw 30vh 2vw;
+  box-shadow:4px 4px 4px gainsboro;
+  border-radius: 40rpx;
+  z-index: 999;
+  background-color: white;
+}
+
+.addBijiContent{
+  display: flex;
+  height: 42vh;
+  width: 92vw;
+  margin: auto 2vw;
+}
+
+.addBijiContent textarea{
+  display: flex;
+  height: 42vh;
+  width: 92vw;
+}
+
+.addBijiButtonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 96vw;
+  height: 8vh;
+}
+
+.addBijiButton{
+  display: flex;
+  width: 40vw;
+  height: 6vh;
+  margin: 1vh auto;
+}

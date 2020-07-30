@@ -1,0 +1,12 @@
+<!--miniprogram/wordDownload/wordDownload.wxml-->
+
+<view class="page__bd">
+	<mp-searchbar bindfocus="getWordFileNameList" bindinput="searchInput"></mp-searchbar>
+</view>
+
+<scroll-view class="container" scroll-y>
+	<view class="itemContainer" wx:for="{{wordFileIDList}}" wx:key="item">
+		<image src="../../assets/image/word.png"></image>
+		<view class="word" data-index="{{index}}" bindlongpress="isDownloadWord">{{item.wordFileName}}</view>
+	</view>
+</scroll-view>

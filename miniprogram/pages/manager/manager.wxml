@@ -1,0 +1,80 @@
+<!--miniprogram/manager/manager.wxml-->
+<view wx:if="{{isHide}}">
+	<view wx:if="{{canIUse}}">
+		<view class="screenDialog">
+			<view class="screenContainer">
+				<view class="title">
+					<image src="../../assets/image/weixin.png"></image>
+					MyManager
+				</view>
+				<view class="screenContentContainer">
+					<view class="contentTitle">涉及用户个人文件，请先登录</view>
+					<view class="content">获得你的公开信息(昵称、头像等)</view>
+				</view>
+				<view class="buttonContainer">
+					<button type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+					<button type='primary' bindtap="closeScreen">取消</button>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+	<view class="container">
+		<!--word-->
+		<view class="contentContainer" bindtap="wordDialogOpen">
+			<image src="../../assets/image/word.png"></image>
+		</view>
+
+		<!--ppt-->
+		<view class="contentContainer" bindtap="pptDialogOpen">
+			<image src="../../assets/image/ppt.png"></image>
+		</view>
+
+		<!--excel-->
+		<view class="contentContainer" bindtap="excelDialogOpen">
+			<image src="../../assets/image/excel.png"></image>
+		</view>
+
+		<!--rar-->
+		<view class="contentContainer" bindtap="rarDialogOpen">
+			<image src="../../assets/image/rar.png"></image>
+		</view>
+
+		<!--image-->
+		<view class="contentContainer" bindtap="imageDialogOpen">
+			<image src="../../assets/image/image.png"></image>
+		</view>
+
+		<!--psd-->
+		<view class="contentContainer" bindtap="psdDialogOpen">
+			<image src="../../assets/image/psd.png"></image>
+		</view>
+	</view>
+</view>
+
+<!--word-->
+<mp-halfScreenDialog bindbuttontap="wordButtonTap" show="{{wordDialogShow}}" maskClosable="{{false}}" title="请选择" buttons="{{wordButtons}}">
+</mp-halfScreenDialog>
+
+<!--ppt-->
+<mp-halfScreenDialog bindbuttontap="pptButtonTap" show="{{pptDialogShow}}" maskClosable="{{false}}" title="请选择" buttons="{{pptButtons}}">
+</mp-halfScreenDialog>
+
+<!--excel-->
+<mp-halfScreenDialog bindbuttontap="excelButtonTap" show="{{excelDialogShow}}" maskClosable="{{false}}" title="请选择" buttons="{{excelButtons}}">
+</mp-halfScreenDialog>
+
+<!--rar-->
+<mp-halfScreenDialog bindbuttontap="rarButtonTap" show="{{rarDialogShow}}" maskClosable="{{false}}" title="请选择" buttons="{{rarButtons}}">
+</mp-halfScreenDialog>
+
+<!--image-->
+<mp-halfScreenDialog bindbuttontap="imageButtonTap" show="{{imageDialogShow}}" maskClosable="{{false}}" title="请选择" buttons="{{imageButtons}}">
+</mp-halfScreenDialog>
+
+<!--psd-->
+<mp-halfScreenDialog bindbuttontap="psdButtonTap" show="{{psdDialogShow}}" maskClosable="{{false}}" title="请选择" buttons="{{psdButtons}}">
+</mp-halfScreenDialog>

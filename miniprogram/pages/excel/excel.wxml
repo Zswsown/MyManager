@@ -1,0 +1,20 @@
+<!--miniprogram/pages/excel/excel.wxml-->
+
+<view class="container">
+	<!--添加-->
+	<view class="itemChoose" bindtap="chooseExcel">
+		<text>+</text>
+	</view>
+
+	<!--元素容器-->
+	<view class="itemContainer" wx:for="{{srcList}}" wx:key="item">
+		<image src="../../assets/image/excel.png"></image>
+		<view class="excel" data-index="{{index}}" bindlongpress="isDeleteExcel">
+			{{item.name}}
+		</view>
+	</view>
+</view>
+
+<view class="uploadButton" bindtap="upload">
+	<text>上传</text>
+</view>

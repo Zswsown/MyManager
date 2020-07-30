@@ -1,0 +1,11 @@
+<!--miniprogram/pages/psdDownload/psdDownload.wxml-->
+<view class="page__bd">
+	<mp-searchbar bindfocus="getPsdFileNameList" bindinput="searchInput"></mp-searchbar>
+</view>
+
+<scroll-view class="container" scroll-y>
+	<view class="itemContainer" wx:for="{{psdFileIDList}}" wx:key="item">
+		<image src="../../assets/image/psd.png"></image>
+		<view class="psd" data-index="{{index}}" bindlongpress="isDownloadPsd">{{item.psdFileName}}</view>
+	</view>
+</scroll-view>

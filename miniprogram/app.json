@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/manager/manager",
+    "pages/mine/mine",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/word/word",
+    "pages/excel/excel",
+    "pages/ppt/ppt",
+    "pages/rar/rar",
+    "pages/image/image",
+    "pages/psd/psd",
+    "pages/imageDownload/imageDownload",
+    "pages/wordDownload/wordDownload",
+    "pages/pptDownload/pptDownload",
+    "pages/kuaidi/kuaidi",
+    "pages/biji/biji",
+    "pages/excelDownload/excelDownload",
+    "pages/rarDownload/rarDownload",
+    "pages/psdDownload/psdDownload"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/assets/iconfont/index_1.png",
+        "selectedIconPath": "/assets/iconfont/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/manager/manager",
+        "iconPath": "/assets/iconfont/manager_1.png",
+        "selectedIconPath": "/assets/iconfont/manager.png",
+        "text": "文件"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "/assets/iconfont/mine_1.png",
+        "selectedIconPath": "/assets/iconfont/mine.png",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "MyManager",
+    "navigationBarTextStyle": "black"
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "usingComponents": {
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar",
+    "mp-halfScreenDialog": "weui-miniprogram/half-screen-dialog/half-screen-dialog"
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.6",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

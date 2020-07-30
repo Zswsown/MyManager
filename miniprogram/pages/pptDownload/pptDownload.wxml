@@ -1,0 +1,12 @@
+<!--miniprogram/pptDownload/pptDownload.wxml-->
+
+<view class="page__bd">
+	<mp-searchbar bindfocus="getPptFileNameList" bindinput="searchInput"></mp-searchbar>
+</view>
+
+<scroll-view class="container" scroll-y>
+	<view class="itemContainer" wx:for="{{pptFileIDList}}" wx:key="item">
+		<image src="../../assets/image/ppt.png"></image>
+		<view class="ppt" data-index="{{index}}" bindlongpress="isDownloadPpt">{{item.pptFileName}}</view>
+	</view>
+</scroll-view>

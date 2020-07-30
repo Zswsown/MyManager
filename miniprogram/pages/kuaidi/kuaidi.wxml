@@ -1,0 +1,27 @@
+<!--miniprogram/pages/kuaidi/kuaidi.wxml-->
+<view class="container">
+	<form bindsubmit="openQueryKuaidi">
+		<view class="inputNumberContainer">
+			<input name="inputNumber" placeholder="请填写快递单号"></input>
+		</view>
+		<view class="inputPhoneContainer">
+			<view class="kuaidiText.{{phoneDisable?'isSelect':''}}">顺丰快递</view>
+			<view class="swtichContainer">
+				<switch name="switch" checked="{{switchChecked}}" bindchange="switchChange" />
+			</view>
+			<input name="inputPhoneNumber" disabled="{{phoneDisable}}" placeholder="寄件人/收件人手机号"></input>
+		</view>
+		<view class="buttonContainer">
+			<button type="primary" formType="submit">查询</button>
+		</view>
+	</form>
+</view>
+
+<view wx:if="{{queryResultshow}}">
+	<scroll-view scroll-y class="queryResultContainer">
+		<view class="itemContainer" wx:for="{{queryResultList}}" wx:key="item">
+			<view class="timeContainer">{{item.time}}</view>
+			<scroll-view scroll-y class="statusContainer">{{item.status}}</scroll-view>
+		</view>
+	</scroll-view>
+</view>

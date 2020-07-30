@@ -1,0 +1,27 @@
+/* miniprogram/pages/imageDownload/imageDownload.wxss */
+page{
+  height: 100%;
+  background-color: white;
+}
+
+.container {
+  display: table-cell;
+}
+
+.itemContainer {
+  display: flex;
+  float: left;
+  height: 30vw;
+  width: 30vw;
+  margin: 1.5vw;
+  border-radius: 15rpx;
+  background-color: whitesmoke;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.itemContainer image{
+  display: flex;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 15rpx;
+}

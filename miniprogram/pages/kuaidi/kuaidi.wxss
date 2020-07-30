@@ -1,0 +1,108 @@
+/* miniprogram/pages/kuaidi/kuaidi.wxss */
+page{
+  background: #fffafa;
+}
+
+.container{
+  display: flexbox;
+  margin: 4vh 2vw;
+  width: 96vw;
+  height: 30vh;
+  border-radius: 40rpx;
+  box-shadow:4px 4px 4px gainsboro;
+}
+
+.inputNumberContainer{
+  display: flex;
+  width: 90vw;
+  height:6vh;
+  border-radius: 20rpx;
+  border: 2px solid darkgray;
+  margin: 2vh 3vw;
+}
+
+.inputNumberContainer input{
+  display: flex;
+  width: 90vw;
+  height:6vh;
+  padding-left: 1vw;
+}
+
+.inputPhoneContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90vw;
+  height:6vh;
+  align-items: center;
+  margin: 2vh 3vw;
+}
+
+.kuaidiText{
+  display: flex;
+  width: 20vw;
+  height:6vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.kuaidiText.isSelect{
+  color: #808080;
+}
+
+.swtichContainer{
+  display: flex;
+  width: 18vw;
+  height: 6vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputPhoneContainer input{
+  display: flex;
+  width: 52vw;
+  height:6vh;
+  border-radius: 20rpx;
+  border: 2px solid darkgray;
+  padding-left: 1vw;
+}
+
+.buttonContainer{
+  display: flex;
+  height: 6vh;
+  width: 40vw;
+  margin: 2vh 28vw;
+}
+
+.queryResultContainer{
+  display: flexbox;
+  height: 62vh;
+  width: 100vw;
+  background-color: whitesmoke;
+}
+
+.itemContainer{
+  display: flexbox;
+  width: 90vw;
+  height: 20vh;
+  background-color: white;
+  border-radius: 40rpx;
+  margin: 2vh 5vw;
+  box-shadow:4px 4px 4px gainsboro;
+}
+
+.timeContainer{
+  display: flex;
+  width: 90vw;
+  height: 4vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusContainer{
+  display: flex;
+  width: 86vw;
+  height: 16vh;
+  padding: 0 2vw;
+}

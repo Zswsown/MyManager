@@ -1,0 +1,20 @@
+<!--miniprogram/pages/rar/rar.wxml-->
+
+<view class="container">
+	<!--添加-->
+	<view class="itemChoose" bindtap="chooseRar">
+		<text>+</text>
+	</view>
+
+	<!--元素容器-->
+	<view class="itemContainer" wx:for="{{srcList}}" wx:key="item">
+		<image src="../../assets/image/rar.png"></image>
+		<view class="rar" data-index="{{index}}" bindlongpress="isDeleteRar">
+			{{item.name}}
+		</view>
+	</view>
+</view>
+
+<view class="uploadButton" bindtap="upload">
+	<text>上传</text>
+</view>

@@ -1,0 +1,13 @@
+<!--miniprogram/pages/image/image.wxml-->
+<view class="container">
+	<view class="itemChoose" bindtap="chooseImage">
+		<text>+</text>
+	</view>
+	<view class="itemContainer" wx:for="{{srcList}}" wx:key="item">
+		<image mode="aspectFit" src="{{item}}" data-index="{{index}}" bindlongpress="isDeleteImage"></image>
+	</view>
+</view>
+
+<view class="uploadButton" bindtap="upload">
+	<text>上传</text>
+</view>

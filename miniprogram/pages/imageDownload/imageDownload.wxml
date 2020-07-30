@@ -1,0 +1,6 @@
+<!--miniprogram/pages/imageDownload/imageDownload.wxml-->
+<view class="container">
+	<view class="itemContainer" wx:for="{{imageFileIDList}}" wx:key="item">
+		<image mode="aspectFit" src="{{item.imageFileID}}" data-index="{{index}}" bindlongpress="isDownloadImage"></image>
+	</view>
+</view>

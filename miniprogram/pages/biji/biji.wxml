@@ -1,0 +1,33 @@
+<!--miniprogram/pages/biji/biji.wxml-->
+<view class="container">
+	<scroll-view scroll-y class="bijiContainer">
+		<view class="itemContainer" wx:for="{{bijiList}}" wx:key="item">
+			<view class="timeContainer">{{item.bijiTime}}</view>
+			<scroll-view scroll-y class="contentContainer">{{item.bijiContent}}</scroll-view>
+		</view>
+	</scroll-view>
+	<view class="addContainer">
+		<view class="addicon" bindtap="openAddBiji">
+			<image src="../../assets/image/add.png"></image>
+		</view>
+	</view>
+</view>
+
+<view wx:if="{{addBijiContainerShow}}">
+	<form bindsubmit="addBiji" bindreset="closeAddBijiContainer">
+		<view class="addBijiContainer">
+			<view class="addBijiContent">
+				<textarea name="bijiContent" maxlength="-1" name="bijiContent" placeholder="请输入内容"></textarea> 
+			</view>
+			<view class="addBijiButtonContainer">
+				<view class="addBijiButton">
+					<button type="primary" formType="reset">取消</button>
+				</view>
+				<view class="addBijiButton">
+					<button type="primary" formType="submit">确认</button>
+				</view>
+			</view>
+		</view>
+	</form>
+
+</view>

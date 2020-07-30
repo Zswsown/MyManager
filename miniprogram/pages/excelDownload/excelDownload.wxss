@@ -1,0 +1,38 @@
+/* miniprogram/pages/excelDownload/excelDownload.wxss */
+page{
+  height: 100%;
+  background-color: white;
+}
+
+.container {
+  display: flexbox;
+}
+
+.itemContainer {
+  display: flex; 
+  height: 7vh;
+  width: 86vw;
+  margin: 1vw;
+  padding-left: 7vh;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15rpx;
+  background-color: white;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.itemContainer excel{
+  display: flex;
+  height: 7vh;
+  width: 80vw;
+  border-radius: 15rpx;
+}
+
+.itemContainer image{
+  display: flex;
+  position: absolute;
+  left: 0;
+  height: 6vh;
+  width: 6vh;
+}

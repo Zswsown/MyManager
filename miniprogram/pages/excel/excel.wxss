@@ -1,0 +1,71 @@
+/* miniprogram/pages/excel/excel.wxss */
+page{
+  background: linear-gradient(to top, #f8f27e, white);
+}
+
+.container {
+  display: table-cell;
+  width: 96vw;
+  height: 82vh;
+  border-radius: 15rpx;
+  background-color: white;
+  margin: 1vh 2vw;
+}
+
+.itemContainer {
+  display: flex; 
+  height: 7vh;
+  width: 83vw;
+  margin: 1vh 1vw;
+  padding-left: 7vh;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15rpx;
+  background-color: white;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.itemContainer excel{
+  display: flex;
+  height: 7vh;
+  width: 83vw;
+  align-items: center;
+  border-radius: 15rpx;
+}
+
+.itemContainer image{
+  display: flex;
+  position: absolute;
+  left: 0;
+  height: 6vh;
+  width: 6vh;
+}
+
+.itemChoose {
+  display: flex;
+  height: 6vh;
+  width: 94vw;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh 1vw;
+  border-radius: 15rpx;
+  background-color: yellow;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  width: 96vw;
+  margin: 1vh 2.5vw;
+  border-radius: 15rpx;
+  background-color: yellow;
+}
+
+.uploadButton text {
+  font-weight: bold;
+}

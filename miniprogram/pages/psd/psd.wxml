@@ -1,0 +1,20 @@
+<!--miniprogram/pages/psd/psd.wxml-->
+
+<view class="container">
+	<!--添加-->
+	<view class="itemChoose" bindtap="choosePsd">
+		<text>+</text>
+	</view>
+
+	<!--元素容器-->
+	<view class="itemContainer" wx:for="{{srcList}}" wx:key="item">
+		<image src="../../assets/image/psd.png"></image>
+		<view class="psd" data-index="{{index}}" bindlongpress="isDeletePsd">
+			{{item.name}}
+		</view>
+	</view>
+</view>
+
+<view class="uploadButton" bindtap="upload">
+	<text>上传</text>
+</view>

@@ -1,0 +1,94 @@
+/* miniprogram/manager/manager.wxss */
+.screenDialog{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.screenContainer{
+  display: flexbox;
+  margin-top: 70vh;
+  border-radius: 80rpx 80rpx 0 0;
+  width: 100vw;
+  height:30vh;
+  background-color: white;
+}
+
+.title{
+  display: flex;
+  width: 100vw;
+  height: 80rpx;
+  font-size: larger;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80rpx 80rpx 0 0;
+  background-color: white;
+}
+
+.title image{
+  display: flex;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 10rpx;
+  border-radius: 60rpx;
+}
+
+.screenContentContainer{
+  display: flex-box;
+  width: 90vw;
+  height:14vh;
+}
+
+.contentTitle{
+  display: flex;
+  font-size: larger;
+  font-weight: bolder;
+  align-items: center;
+  width: 96vw;
+  height: 8vh;
+  margin: auto 2vw;
+}
+
+.content{
+  display: flex;
+  width: 96vw;
+  height: 6vh;
+  font-size: small;
+  color: gray;
+  margin: auto 2vw;
+}
+
+.buttonContainer{
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;  
+}
+
+.container {
+  display: inline-table;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, #f8f27e, white);
+}
+
+.contentContainer {
+  display: flex;
+  float: left;
+  margin: 2vw 5vw;
+  height: 40vw;
+  width: 40vw;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.contentContainer image{
+  display: flex;
+  height: 30vw;
+  width: 30vw;
+  margin: 5vw;
+}

@@ -1,0 +1,72 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<swiper class="swiperContainer" easing-function="easeInOutCubic" indicator-dots="true" interval="4000" autoplay="true" circular="true">
+	<block wx:for="{{swiperImageFileIDList}}" wx:key="item">
+		<swiper-item id="{{item.id}}">
+			<image class="swiperImage" mode="aspectFill" src="{{item.swiperImageFileID}}" />
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="iconContainer">
+	<view class="iconItemContainer" bindtap="openIDRecognition">
+		<image src="../../assets/image/IDCard.png"></image>
+		证件识别
+	</view>
+
+	<view class="iconItemContainer" bindtap="openKuadi">
+		<image src="../../assets/image/kuaidi.png"></image>
+		快递查询
+	</view>
+	<view class="iconItemContainer" bindtap="openMapNavigation">
+		<image src="../../assets/image/daohang.png"></image>
+		地图导航
+	</view>
+	<!-- <view class="iconItemContainer" bindtap="openWeacher">
+			<image src="../../assets/image/weather.png"></image>
+			查天气
+		</view> -->
+</view>
+
+
+<view wx:if="{{idCardShow}}">
+	<view class="idCardScreen">
+		<view class="idCardContainer">
+			<view class="idCardScreenTitle">证件信息</view>
+			<view class="idCardContentContainer">
+				<view class="idCardItemContainer">
+					<view class="idCardItemTitle">姓名</view>
+					<view class="idCardItemContent">{{idCardContent.name.text}}</view>
+				</view>
+				<view class="idCardItemContainer">
+					<view class="idCardItemTitle">性别</view>
+					<view class="idCardItemContent">{{idCardContent.gender.text}}</view>
+				</view>
+				<view class="idCardItemContainer">
+					<view class="idCardItemTitle">民族</view>
+					<view class="idCardItemContent">{{idCardContent.nationality.text}}</view>
+				</view>
+				<view class="idCardItemContainer">
+					<view class="idCardItemTitle">出生</view>
+					<view class="idCardItemContent">{{idCardContent.birth.text}}</view>
+				</view>
+				<view class="idCardAddressContainer">
+					<view class="idCardItemTitle">住址</view>
+					<view class="idCardAddress">{{idCardContent.address.text}}</view>
+				</view>
+				<view class="idCardItemContainer">
+					<view class="idCardItemTitle">公民身份号码</view>
+					<view class="idCardItemContent">{{idCardContent.id.text}}</view>
+				</view>
+			</view>
+			<view class="idCardButtonContainer">
+				<view class="buttonContainer" bindtap="closeIDCardScreen">
+					<button type="primary">取消</button>
+				</view>
+				<view class="buttonContainer" bindtap="confirmCopyIDCard">
+					<button type="primary">确认</button>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

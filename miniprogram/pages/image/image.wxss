@@ -1,0 +1,58 @@
+/* miniprogram/pages/image/image.wxss */
+page{
+  background: linear-gradient(to top, #f8f27e, white);
+}
+
+.container {
+  display: table-cell;
+  width: 96vw;
+  height: 68vh;
+  border-radius: 15rpx;
+  background-color: white;
+  margin: 1vh 2vw;
+}
+
+.itemContainer {
+  display: flex;
+  float: left;
+  height: 30vw;
+  width: 30vw;
+  margin: 1vw;
+  border-radius: 15rpx;
+  background-color: whitesmoke;
+}
+
+.itemContainer image{
+  display: flex;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 15rpx;
+}
+
+.itemChoose {
+  display: flex;
+  height: 6vh;
+  width: 94vw;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw;
+  border-radius: 15rpx;
+  background-color: yellow;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  width: 96vw;
+  margin: 1vh 2.5vw;
+  border-radius: 15rpx;
+  background-color: yellow;
+}
+
+.uploadButton text {
+  font-weight: bold;
+}

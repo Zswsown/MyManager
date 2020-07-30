@@ -1,0 +1,58 @@
+<!--miniprogram/mine/mine.wxml-->
+<view class="backgroundColor"></view>
+<view class="container">
+	<view class="imageContainer">
+		<image src="{{thisUserInfo.avatarUrl}}"></image>
+	</view>
+	<view class="contentContainer">
+		<view class="nickname">
+			<image src="../../assets/image/name.png"></image>
+			{{thisUserInfo.nickName}}
+		</view>
+		<view class="country">
+			<image src="../../assets/image/country.png"></image>
+			{{thisUserInfo.country}}
+		</view>
+	</view>
+</view>
+
+<view class="itemContainer" bindtap="getGdufAddress">
+	<view class="itemImageContainer">
+		<image src="../../assets/image/location.png"></image>
+	</view>
+	<view class="itemContentContainer">广东金融学院</view>
+	<view class="itemLinkContainer">
+		<image src="../../assets/image/link.png"></image>
+	</view>
+</view>
+
+<view class="itemContainer" bindtap="makePhoneCall">
+	<view class="itemImageContainer">
+		<image src="../../assets/image/phone.png"></image>
+	</view>
+	<view class="itemContentContainer">联系作者</view>
+	<view class="itemLinkContainer">
+		<image src="../../assets/image/link.png"></image>
+	</view>
+</view>
+
+<view class="itemContainer" bindtap="sendGift">
+	<view class="itemImageContainer">
+		<image src="../../assets/image/gift.png"></image>
+	</view>
+	<view class="itemContentContainer">给个赞赏</view>
+	<view class="itemLinkContainer">
+		<image src="../../assets/image/link.png"></image>
+	</view>
+</view>
+
+<view wx:if="{{show}}">
+	<view class="giftContainer">
+		<view class="giftImageContainer">
+			<image src="../../assets/image/Zswsown.png"></image>
+		</view>
+		<view class="closeIcon">
+			<image bindtap="close" src="../../assets/image/cancle.png"></image>
+		</view>
+	</view>
+</view>

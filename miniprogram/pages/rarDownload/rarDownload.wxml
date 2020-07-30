@@ -1,0 +1,12 @@
+<!--miniprogram/pages/rarDownload/rarDownload.wxml-->
+
+<view class="page__bd">
+	<mp-searchbar bindfocus="getRarFileNameList" bindinput="searchInput"></mp-searchbar>
+</view>
+
+<scroll-view class="container" scroll-y>
+	<view class="itemContainer" wx:for="{{rarFileIDList}}" wx:key="item">
+		<image src="../../assets/image/rar.png"></image>
+		<view class="rar" data-index="{{index}}" bindlongpress="isDownloadRar">{{item.rarFileName}}</view>
+	</view>
+</scroll-view>

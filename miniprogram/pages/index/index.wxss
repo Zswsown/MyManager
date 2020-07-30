@@ -1,0 +1,153 @@
+/* miniprogram/pages/index/index.wxss */
+page{
+  background: #fffafa;
+}
+
+.swiperContainer{
+  display: flex;
+  width: 96vw;
+  height: 38vh;
+  margin: 2vw 2vw;
+  border-radius: 50rpx;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.swiperImage{
+  display: flex;
+  width: 96vw;
+  height: 38vh;
+  border-radius: 50rpx;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.iconContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 14vh;
+  width: 96vw;
+  margin: 2vh 2vw;
+  border-radius: 30rpx;
+}
+
+.iconItemContainer{
+  display: flex;
+  flex-direction: column;
+  height: 12vh;
+  width: 20vw;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+  margin:1vh 2vw;
+  background-color: white;
+  border-radius: 30rpx;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.iconItemContainer image{
+  display: flex;
+  width: 14vw;
+  height: 8vh;
+  margin: auto;
+}
+
+.idCardScreen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: azure;
+}
+
+.idCardContainer{
+  display: flexbox;
+  height: 50vh;
+  width: 96vw;
+  margin: 15vh auto;
+  background-color: white;
+  border-radius: 40rpx;
+  box-shadow: 5px 5px 5px gainsboro;
+}
+
+.idCardScreenTitle{
+  display: flex;
+  height: 7vh;
+  width: 96vw;
+  border-radius: 40rpx 40rpx 0 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.idCardContentContainer{
+  display: flexbox;
+  height: 35vh;
+  width: 96vw;
+  background-color: white;
+}
+
+.idCardButtonContainer{
+  display: flex;
+  height: 8vh;
+  width: 96vw;
+  background-color: white;
+  border-radius: 0 0 40rpx 40rpx;
+  justify-content: center;
+}
+
+.buttonContainer{
+  display: flex;
+  height: 7vh;
+  width: 40vw;
+  margin: auto 2vw;
+}
+
+.idCardItemContainer{
+  display: flex;
+  height: 5vh;
+  width: 96vw;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.idCardItemContent{
+  display: flex;
+  height: 5vh;
+  width: 66vw;
+  align-items: center;
+}
+
+.idCardItemTitle{
+  display: flex;
+  height: 5vh;
+  width: 30vw;
+  color: #3d7398;
+  justify-content: center;
+  align-items: center;
+}
+
+.idCardAddressContainer{
+  display: flex;
+  height: 10vh;
+  width: 96vw;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.idCardAddressTitle{
+  display: flex;
+  height: 10vh;
+  width: 30vw;
+  justify-content: center;
+}
+
+.idCardAddress{
+  display: flex;
+  height: 10vh;
+  width: 66vw;
+  align-items: center; 
+}
+

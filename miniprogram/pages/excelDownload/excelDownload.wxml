@@ -1,0 +1,12 @@
+<!--miniprogram/pages/excelDownload/excelDownload.wxml-->
+
+<view class="page__bd">
+	<mp-searchbar bindfocus="getExcelFileNameList" bindinput="searchInput"></mp-searchbar>
+</view>
+
+<scroll-view class="container" scroll-y>
+	<view class="itemContainer" wx:for="{{excelFileIDList}}" wx:key="item">
+		<image src="../../assets/image/excel.png"></image>
+		<view class="excel" data-index="{{index}}" bindlongpress="isDownloadExcel">{{item.excelFileName}}</view>
+	</view>
+</scroll-view>

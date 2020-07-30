@@ -1,0 +1,164 @@
+/* miniprogram/mine/mine.wxss */
+page{
+  background: #fffafa;
+}
+
+.backgroundColor{
+  position:absolute;
+  height: 28vh;
+  width: 100vw;
+  background-color: #fdc700;
+  left:0;
+  top:0;
+  z-index:-1;
+}
+
+.container{
+  display: flexbox;
+  width: 94vw;
+  height:28vh;
+  border-radius: 30rpx;
+  background-color: white;
+  margin:15vh 3vw 0 3vw;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.imageContainer{
+  display: flex;
+  width: 18vh;
+  height:18vh;
+  margin: 1vh auto;
+}
+
+.imageContainer image{
+  display: flex;
+  width: 18vh;
+  height:18vh;
+  border-radius: 18vh;
+}
+
+.contentContainer{
+  display: flex;
+  width: 94vw;
+  height:6vh;
+  justify-content: space-around;
+  margin: 1vh 2vw;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.nickname{
+  display: flex;
+  height: 6vh;
+  width: 38vw;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border-radius: 30rpx;
+  background-color: yellow;
+}
+
+.nickname image{
+  display: flex;
+  height: 5vh;
+  width: 5vh;
+}
+
+.country{
+  display: flex;
+  height: 6vh;
+  width: 38vw;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  border-radius: 30rpx;
+  background-color: #F8F8F8;
+}
+
+.country image{
+  display: flex;
+  height: 5vh;
+  width: 5vh;
+}
+
+.itemContainer{
+  display: flex;
+  width: 94vw;
+  height: 8vh;
+  background-color: white;
+  margin: 3vh 3vw 0 3vw;
+  border-radius: 30rpx;
+  box-shadow:2px 2px 2px gainsboro;
+}
+
+.itemImageContainer{
+  display: flex;
+  height: 4vh;
+  width: 4vh;
+  margin: 2vh 3vw;
+}
+
+.itemImageContainer image{
+  display: flex;
+  width: 4vh;
+  height: 4vh;
+}
+
+.itemContentContainer{
+  display: flex;
+  align-items: center;
+  height: 6vh;
+  width:72vw;
+  margin: 1vh 0;
+}
+
+.itemLinkContainer{
+  display: flex;
+  height: 6vh;
+  width: 10vw;
+  margin: 2vh 0;
+}
+
+.itemLinkContainer image{
+  display: flex;
+  width: 4vh;
+  height: 4vh;
+}
+
+.giftContainer{
+  display: flexbox;
+  height: 100vh;
+  width: 100vh;
+  background-color: gainsboro;
+  z-index: 999;
+  position:absolute;
+  left: 0;
+  top:0;
+}
+
+.giftImageContainer{
+  display: flex;
+  height: 90vw;
+  width: 90vw;
+  margin: 15vh 5vw 2vh 5vw;
+  background-color: white;
+}
+
+.giftImageContainer image{
+  display: flex;
+  width: 90vw;
+  height: 90vw;
+}
+
+.closeIcon{
+  display: flex;
+  height: 40px;
+  width: 100vw;
+  justify-content: center;
+}
+
+.closeIcon image{
+  display: flex;
+  height: 40px;
+  width: 40px;
+}

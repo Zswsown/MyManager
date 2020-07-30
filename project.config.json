@@ -1,0 +1,202 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": true
+	},
+	"appid": "wx00053eb8116d709d",
+	"projectname": "MyManager",
+	"libVersion": "2.11.2",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "图片",
+					"pathName": "pages/image/image",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图片下载",
+					"pathName": "pages/imageDownload/imageDownload",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "word上传",
+					"pathName": "pages/word/word",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "word下载",
+					"pathName": "pages/wordDownload/wordDownload",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ppt上传",
+					"pathName": "pages/ppt/ppt",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/auth/auth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/auth/auth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "快递",
+					"pathName": "pages/kuaidi/kuaidi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "笔记",
+					"pathName": "pages/biji/biji",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图片下载",
+					"pathName": "pages/imageDownload/imageDownload",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "文件管理",
+					"pathName": "pages/manager/manager",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "excel上传",
+					"pathName": "pages/excel/excel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "excel下载",
+					"pathName": "pages/excelDownload/excelDownload",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "rar上传",
+					"pathName": "pages/rar/rar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "psd上传",
+					"pathName": "pages/psd/psd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "psd下载",
+					"pathName": "pages/psdDownload/psdDownload",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}
